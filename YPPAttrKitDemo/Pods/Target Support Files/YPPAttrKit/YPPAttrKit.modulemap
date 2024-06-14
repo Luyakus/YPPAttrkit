@@ -1,0 +1,6 @@
+framework module YPPAttrKit {
+  umbrella header "YPPAttrKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

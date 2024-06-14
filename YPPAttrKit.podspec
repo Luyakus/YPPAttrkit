@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "git@git.yupaopao.com:leigaopan/yppattrkit.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Luyakus/YPPAttrkit", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

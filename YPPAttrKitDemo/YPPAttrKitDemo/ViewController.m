@@ -56,7 +56,6 @@
     
     YYLabel *label = [[YYLabel alloc] initWithFrame:CGRectMake(0, self.index ++ * LineHeight, UIScreen.mainScreen.bounds.size.width, LineHeight)];
     label.numberOfLines = 0;
-    label.backgroundColor = UIColor.whiteColor;
     [self.view addSubview:label];
     label.attributedText = attr;
 }
@@ -216,7 +215,10 @@
             str.yy_font = [UIFont systemFontOfSize:30];
             return str;
         };
-    }).every(^(YPPDP *p) {
+    }).add(^(YPPSP *p) {
+        p.key = NSForegroundColorAttributeName;
+        p.value = UIColor.redColor;
+    }).build).every(^(YPPDP *p) {
         p.regex = @"\\[\\w+?\\]";
         p.replace = ^NSAttributedString *(NSTextCheckingResult *result, NSInteger index, NSString *processingString) {
             NSString *emojiStr = [processingString substringWithRange:result.range];
@@ -228,10 +230,7 @@
                                                                                      alignment:YYTextVerticalAlignmentCenter];
             return emojiAttr;
         };
-    }).add(^(YPPSP *p) {
-        p.key = NSForegroundColorAttributeName;
-        p.value = UIColor.redColor;
-    }).build).build;
+    }).build;
     
     YYLabel *label = [[YYLabel alloc] initWithFrame:CGRectMake(0, self.index ++ * LineHeight, UIScreen.mainScreen.bounds.size.width, LineHeight)];
     label.numberOfLines = 0;

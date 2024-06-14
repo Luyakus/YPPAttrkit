@@ -1,0 +1,23 @@
+PODS:
+  - YPPAttrKit (0.0.1)
+  - YYText (1.0.7)
+
+DEPENDENCIES:
+  - YPPAttrKit (from `..`)
+  - YYText
+
+SPEC REPOS:
+  trunk:
+    - YYText
+
+EXTERNAL SOURCES:
+  YPPAttrKit:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  YPPAttrKit: e66558f386314a08e28d5f454289fe44148b78cd
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+
+PODFILE CHECKSUM: afe9b3ed7933c7ff056b437fbadb4acda9b7c7cc
+
+COCOAPODS: 1.15.2
