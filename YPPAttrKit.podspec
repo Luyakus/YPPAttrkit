@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
   "富文本便利构建"
                    DESC
 
-  spec.homepage     = "http://www.baidu.com"
+  spec.homepage     = "https://github.com/Luyakus/YPPAttrkit"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Luyakus/YPPAttrkit", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Luyakus/YPPAttrkit" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
